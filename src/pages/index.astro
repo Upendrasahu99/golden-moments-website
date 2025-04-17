@@ -1,12 +1,20 @@
 ---
-import '../styles/global.css';
+import MainLayout from '../layouts/MainLayout.astro';
+import './src/styles/global.css';
+import Button from '../components/Button.astro';
 ---
+<MainLayout>
+  <div class="bg-slider fixed w-full h-full border-0 sm:border-[1.5rem] border-white bg-cover bg-center p-15 font-serif font-[400] text-white">
+    <h1 class="text-5xl border-0">GOLDEN MOMENTS</h1>
+    <p class="tracking-wide md:tracking-[.5rem] my-4">Aliquam mattis risus a nunc convallis tempor.</p>
+    <Button text="ENTER"/>
+  </div>
+</MainLayout>
 
-<div class="fixed w-full h-full border-[1rem] border-white bg-cover bg-center bg-slider"></div>
 
 <style>
   .bg-slider {
-    animation: change-karo-image-ko 40s infinite;
+    animation: change-karo-image-ko 24s infinite;
   }
 
   @keyframes change-karo-image-ko {
