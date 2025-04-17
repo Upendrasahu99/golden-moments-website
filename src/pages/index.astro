@@ -1,4 +1,32 @@
 ---
-
+import '../styles/global.css';
 ---
 
+<div class="fixed w-full h-full border-[1rem] border-white bg-cover bg-center bg-slider"></div>
+
+<style>
+  .bg-slider {
+    animation: change-karo-image-ko 40s infinite;
+  }
+
+  @keyframes change-karo-image-ko {
+    0% {
+      background-image: url('/assets/image-1.jpg');
+    }
+    20% {
+      background-image: url('/assets/image-2.jpg');
+    }
+    40% {
+      background-image: url('/assets/image-3.jpg');
+    }
+    60% {
+      background-image: url('/assets/image-4.jpg');
+    } 
+    80% {
+      background-image: url('/assets/image-5.jpg');
+    } 
+    100% {
+      background-image: url('/assets/image-6.jpg');
+    } 
+  }
+</style>
